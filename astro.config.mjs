@@ -8,6 +8,12 @@ import react from "@astrojs/react";
 export default defineConfig({
 	site: "https://tasks.sapphi.dev",
 	vite: {
+		server: {
+			allowedHosts: ["tasks.sapphi.dev"],
+		},
+		preview: {
+			allowedHosts: ["tasks.sapphi.dev"],
+		},
 		plugins: [tailwindcss()],
 	},
 
