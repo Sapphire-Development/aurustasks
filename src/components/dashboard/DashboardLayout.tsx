@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { AppNavbar } from "./AppNavbar";
 import { useAuth } from "@/hooks/useAuth";
-import { Toaster } from "sonner";
 
 interface DashboardLayoutProps {
 	children: React.ReactNode;
