@@ -1,0 +1,8 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SettingsContent } from "../components/settings/SettingsContent";
+---
+
+<Layout>
+  <SettingsContent client:only="react" />
+</Layout>

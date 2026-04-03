@@ -1,27 +1,20 @@
 ---
 import "@/styles/global.css";
+import { Toaster } from "sonner";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>AurusTasks - Panel personal</title>
 	</head>
-	<body>
+	<body class="min-h-screen bg-background text-foreground font-sans antialiased">
 		<slot />
+		<Toaster client:load />
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>

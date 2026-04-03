@@ -1,0 +1,8 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { DashboardContent } from "../components/dashboard/DashboardContent";
+---
+
+<Layout>
+  <DashboardContent filter="me" client:only="react" />
+</Layout>
